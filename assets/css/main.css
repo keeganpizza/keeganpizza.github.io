@@ -1,0 +1,61 @@
+html, body
+{
+    height: 100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+img {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.pizza {
+    position: fixed;
+    justify-content: center;
+    animation: left-rotation 2s infinite linear;
+}
+
+.keegan {
+    position: absolute;
+    justify-content: center;
+    background-size: cover;
+    animation: right-rotation 2s infinite linear;
+    width: 10%;
+}
+
+marquee {
+    background-color: red;
+    color: yellow;
+    position: absolute;
+    font-weight: 200;
+    font-size: xx-large;
+    z-index: 999 !important;
+}
+
+@keyframes right-rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@keyframes left-rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+}
